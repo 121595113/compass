@@ -39,7 +39,6 @@ sourcemap = true
 if environment == :development
 	sourcemap = false
 	output_style = :expanded
-	require "fileutils"
 end
 
 if environment == :production
