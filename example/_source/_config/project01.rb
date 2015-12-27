@@ -1,6 +1,10 @@
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
+# 样式重置normalize安装方法：gem install compass-normalize
+# 使用方式：@import "normalize";
+# require 'compass-normalize'
+
 # Set this to the root of your project when deployed:
 # 项目名称和项目路径
 projectname="project01"

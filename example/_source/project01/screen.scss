@@ -4,9 +4,38 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass";
+// @import "normalize";
+
+// @debug browsers();
+// @debug browser-versions(chrome);
+
+$supported-browsers:ie;
+$browser-minmum-versions:("ie":"6");
+ 
+
+
 body{
 	background: red;
 	font-size: 14px;
 	color: red;
-	width: 400px;
+	@include box-sizing(boreder-box);
+	@include animation(dong 1s);
+	// width: 400px;
+	@include appearance("button");
+}
+#v-gradient-3 {
+  @include background-image(linear-gradient(120deg,white, #cccccc 30%,#fff 50%, #bbbbbb 70%, #aaaaaa));
+}
+
+
+
+
+@include keyframes(ni){
+	from{
+		width: 10px;
+	}
+	to{
+		width: 2px;
+	}
 }
